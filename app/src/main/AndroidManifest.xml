@@ -10,18 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First_task">
         <activity
+            android:name=".recreate_password"
+            android:exported="true" />
+        <activity
+            android:name=".otp"
+            android:exported="true" />
+        <activity
+            android:name=".forgetpassword"
+            android:exported="true" />
+        <activity
             android:name=".RegistrationActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

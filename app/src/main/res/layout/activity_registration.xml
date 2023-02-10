@@ -6,7 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".RegistrationActivity">
+<!--
+
+    //registration
+-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,6 +19,8 @@
         android:text="REGISTRATION"
 
         />
+
+    <!--//username-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,6 +33,8 @@
         android:layout_height="wrap_content"
         android:hint="abc"
         android:id="@+id/etname"/>
+
+   <!-- //email-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,6 +49,8 @@
         android:id="@+id/etmail"
         />
 
+    <!--//password-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,8 +60,25 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="comfirm password"
+        android:id="@+id/etcpassword"/>
+
+    <!--//confirm password-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your confirm password"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:hint="password"
         android:id="@+id/etpassword"/>
+
+    <!--//phone no.-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,10 +91,44 @@
         android:hint="+91"
         android:id="@+id/etphone" />
 
+
+  <!--  //gender-->
+
     <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="GENDER"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CREATE"
+        android:text="male"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="other"
+        />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE "
+        android:id="@+id/create"
         />
 
 
